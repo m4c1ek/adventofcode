@@ -17,7 +17,6 @@ def get_first_and_last(raw_text):
 
     first_and_last_numbers = map(replaceTextsToNumbers, first_and_last)
     final = int("".join(first_and_last_numbers))
-    print(raw_text + " -> " + str(final))
     return final
 
 def run():
