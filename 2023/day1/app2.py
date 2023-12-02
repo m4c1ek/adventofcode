@@ -19,11 +19,11 @@ def get_first_and_last(raw_text):
     final = int("".join(first_and_last_numbers))
     return final
 
-def run():
-    with open('input', 'r') as file:
-        input = file.read().splitlines()
-        result = list(map(get_first_and_last, input))
-        print(sum(result))
-
+def run(file):
+    input = file.read().splitlines()
+    result = list(map(get_first_and_last, input))
+    print("assignment 2 = " + str(sum(result)))
+        
 if __name__ == "__main__":
-    run()
+    with open('input', 'r') as file:
+        run(file)

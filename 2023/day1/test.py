@@ -2,10 +2,6 @@ import pytest
 from app2 import get_first_and_last
 
 
-def is_even(number):
-    return True  # Wuite buggy implementation
-
-
 @pytest.mark.parametrize(
     "text, expected",
     [
