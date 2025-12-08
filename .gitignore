@@ -21,3 +21,4 @@ settings.ini
 
 # Ignore any log files
 *.log
+.DS_Store
